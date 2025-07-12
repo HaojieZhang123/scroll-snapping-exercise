@@ -49,6 +49,9 @@ html {
     /* header covering top part */
     scroll-padding-top: 80px;
 
+    /* smooth scrolling */
+    scroll-behavior: smooth;
+
 }
 
 section{

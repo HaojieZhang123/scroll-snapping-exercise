@@ -45,16 +45,14 @@ html {
     mandatory: required
     proximity: optional, snap only when near the target
     */
+
+    /* header covering top part */
+    scroll-padding-top: 80px;
+
 }
 
 section{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
+    height: calc(100vh - 80px);
 
     /* define where to align scroll snap */
     scroll-snap-align: start;
@@ -64,17 +62,23 @@ section{
     end: end of section
     */
 
+    /* define scroll snap alignment */
+    /* scroll-snap-stop: always; */
+    /* 
+    always: scroll snap always
+    normal: scroll snap only when near the target
+    */
 
 }
 section h2{
-    width: 100%;
     font-size: 4rem;
     font-weight: 600;
     color: #333;
     padding-bottom: 3rem;
+    text-align: center;
 }
 section p{
-    width: 100%;
+    text-align: center;
     color: #666;
 }
 
